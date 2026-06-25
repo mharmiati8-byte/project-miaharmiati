@@ -64,7 +64,6 @@
     <div class="col-lg-4">
         <div class="card-soft p-4 h-100">
             <h2 class="h5 fw-bold mb-3">Report PDF</h2>
-            <p class="text-muted">Lihat laporan artikel atau produk langsung di browser tanpa unduhan otomatis.</p>
             <div class="d-grid gap-2">
                 <a href="{{ route('admin.laporan.artikel.pdf') }}" class="btn btn-danger rounded-pill px-4">
                     <i class="bi bi-file-earmark-pdf me-1"></i>Lihat PDF Artikel

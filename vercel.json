@@ -1,21 +1,19 @@
 {
-  "version": 2,
-  "buildCommand": "composer install --no-dev",
-  "functions": {
+"version": 2,
+"buildCommand": "composer install --no-dev",
+"functions": {
     "api/index.php": {
-      "runtime": "php:8.2",
-      "memory": 512,
-      "maxDuration": 30
+    "runtime": "now-php@0.5.4"
     }
-  },
-  "routes": [
+},
+"routes": [
     {
-      "src": "/(.*)",
-      "dest": "api/index.php"
+    "src": "/(.*)",
+    "dest": "api/index.php"
     }
-  ],
-  "env": {
+],
+"env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false"
-  }
+}
 }

@@ -1,15 +1,19 @@
 {
   "version": 2,
+  "framework": "laravel",
   "functions": {
     "api/index.php": {
-      "runtime": "vercel-php@0.7.3"
+      "runtime": "php:8.2"
     }
   },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/index.php"
+      "dest": "api/index.php"
     }
   ],
-  "outputDirectory": "public/build"
+  "env": {
+    "APP_ENV": "production",
+    "APP_DEBUG": "false"
+  }
 }

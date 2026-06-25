@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "framework": "laravel",
+  "buildCommand": "composer install --no-dev",
   "functions": {
     "api/index.php": {
-      "runtime": "php:8.2"
+      "runtime": "php:8.2",
+      "memory": 512,
+      "maxDuration": 30
     }
   },
   "routes": [

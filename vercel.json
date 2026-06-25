@@ -1,15 +1,15 @@
 {
     "version": 2,
-    "buildCommand": "composer install --no-dev",
+    "buildCommand": "composer install --no-dev && npm install && npm run build",
     "functions": {
         "api/index.php": {
-        "runtime": "now-php@0.5.4"
+            "runtime": "vercel-php@0.7.3"
         }
     },
     "routes": [
         {
-        "src": "/(.*)",
-        "dest": "api/index.php"
+            "src": "/(.*)",
+            "dest": "api/index.php"
         }
     ],
     "env": {
